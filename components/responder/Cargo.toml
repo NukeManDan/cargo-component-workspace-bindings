@@ -1,0 +1,23 @@
+[package]
+name = "responder"
+version = { workspace = true }
+# edition.workspace = true
+# authors.workspace = true
+# description.workspace = true
+# documentation.workspace = true
+
+[lib]
+crate-type = ["cdylib"]
+
+[package.metadata.component]
+package = "ss:responder"
+
+[package.metadata.component.target]
+path = "../../wit"
+world = "responder"
+
+[dependencies]
+anyhow = "1"
+bitflags = { workspace = true }
+clap = { version = "4.3.19", features = ["derive"] }
+wit-bindgen-rt = { workspace = true }

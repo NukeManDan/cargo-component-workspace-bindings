@@ -1,0 +1,7 @@
+package ss:responder@0.1.0;
+
+// Component auto-responder
+world cli {
+    import base64;
+    import ckcompact-dr-kdf;
+}
